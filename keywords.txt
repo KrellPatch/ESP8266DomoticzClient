@@ -1,0 +1,30 @@
+#######################################
+# Syntax Coloring Map For ESP8266DomoticzClient
+#######################################
+
+#######################################
+# Library (KEYWORD3)
+#######################################
+
+ESP8266DomoticzClient	KEYWORD3		RESERVED_WORD
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ESP8266DomoticzClient	KEYWORD1		DATA_TYPE
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+setServerUrl	KEYWORD2
+getServerUrl	KEYWORD2
+isConnected	KEYWORD2
+getLastHTTPReturnCode	KEYWORD2
+getLastHTTPReturnString	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
