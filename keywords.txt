@@ -18,11 +18,15 @@ ESP8266DomoticzClient	KEYWORD1		DATA_TYPE
 # Methods and Functions (KEYWORD2)
 #######################################
 
-setServerUrl	KEYWORD2
-getServerUrl	KEYWORD2
-isConnected	KEYWORD2
+setServerUrl			KEYWORD2
+getServerUrl			KEYWORD2
+isConnected				KEYWORD2
 getLastHTTPReturnCode	KEYWORD2
 getLastHTTPReturnString	KEYWORD2
+addLogMessage			KEYWORD2
+updateDevice			KEYWORD2
+updateDeviceBySValue	KEYWORD2
+updateDeviceByNValue	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

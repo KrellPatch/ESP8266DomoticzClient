@@ -7,18 +7,16 @@
 
 #include "ESP8266DomoticzClient.h"
 
-DomoticzClient::DomoticzClient() :
-	_serverUrl {""},
-	_isConnected {false},
-	_lastHTTPReturnCode {0}
-{}
-
 DomoticzClient::DomoticzClient (String & serverUrl) :
-	DomoticzClient(),
-	_serverUrl {serverUrl}
+		_serverUrl {serverUrl},
+	_lastHTTPReturnCode {0}
 {
 	_isConnected = _connect();
 }
+
+DomoticzClient::DomoticzClient() :
+	DomoticzClient((String&) "")
+{}
 
 DomoticzClient::~DomoticzClient() {
 
@@ -144,7 +142,7 @@ bool DomoticzClient::addLogMessage(String message) {
  * Private (helper) functions
  */
 // Connect to domoticz instance
-bool DomoticzClient::_connect () { // @suppress("No return")
+bool DomoticzClient::_connect () {
 	if(_serverUrl == "") return false;
 
 	String httpString = _serverUrl;
