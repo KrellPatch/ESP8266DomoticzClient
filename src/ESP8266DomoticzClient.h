@@ -31,6 +31,8 @@ public:
 	// Constructors
 	DomoticzClient();
 	DomoticzClient(String &);
+	// ToDo: ctor for authorization
+	// ToDo: ctor for https
 
 	/// Destructor
 	virtual ~DomoticzClient();
@@ -46,6 +48,7 @@ public:
 	bool 		updateDevice(int, String, String);
 	bool 		updateDeviceBySValue(int, String);
 	bool 		updateDeviceByNValue(int, String);
+	// ToDo: member functions as templates for different types of devices???
 
 private:
 	WiFiClient 	_wifiClient;
