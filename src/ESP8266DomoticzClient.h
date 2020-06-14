@@ -30,7 +30,7 @@ public:
 
 	// Constructors
 	DomoticzClient();
-	DomoticzClient(String &);
+	DomoticzClient(const String &);
 	// ToDo: ctor for authorization
 	// ToDo: ctor for https
 
@@ -38,7 +38,7 @@ public:
 	virtual ~DomoticzClient();
 
 	// Public functions
-	void 		setServerUrl(String &);
+	void 		setServerUrl(const String &);
 	String 	getServerUrl();
 	bool 		isConnected();
 	int 		getLastHTTPReturnCode();

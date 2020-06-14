@@ -7,7 +7,7 @@
 
 #include "ESP8266DomoticzClient.h"
 
-DomoticzClient::DomoticzClient (String & serverUrl) :
+DomoticzClient::DomoticzClient (const String & serverUrl) :
 		_serverUrl {serverUrl},
 	_lastHTTPReturnCode {0}
 {
@@ -24,7 +24,7 @@ DomoticzClient::~DomoticzClient() {
 
 // Sets the server URL passed and attempts to connect
 // Returns connection success
-void DomoticzClient::setServerUrl(String & serverUrl) {
+void DomoticzClient::setServerUrl(const String & serverUrl) {
 	// Disconnect previous URL
 	if(_serverUrl) {
 		_disconnect();
